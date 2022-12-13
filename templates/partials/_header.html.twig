@@ -1,0 +1,17 @@
+<header>
+	<div class="header_div">
+		<a class="btn_acceuil" href="/">SUPERMARKET</a>
+		<div class="div_btn_header">
+			{% if app.user %}
+				<a class="btn_create_article" href="{{ path('admin') }}">Admin
+				</a>
+				<a class="btn_create_article" href="{{ path('logout') }}">Logout
+				</a>
+			{% else %}
+				<a class="btn_create_article" href="{{ path('login') }}">Login</a>
+				<a class="btn_create_article" href="{{ path('inscription') }}">Sign Up</a>
+
+			{% endif %}
+		</div>
+	</div>
+</header>

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Inscription
+{% endblock %}
+
+{% block body %}
+	<div class="div_inp">
+		{{ form_start(form, { 'attr' : { 'class': 'form_inscript' } }) }}
+
+		<div class="div_center">
+			{{form_label(form.email)}}
+			{{form_widget(form.email)}}
+		</div>
+
+		<div class="div_center">
+			{{form_label(form.password)}}
+			{{form_widget(form.password)}}
+		</div>
+		<button class="button_ajt" type="submit">Valider</button>
+		{{ form_end(form) }}
+	</div>
+{% endblock %}

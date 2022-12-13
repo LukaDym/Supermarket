@@ -1,0 +1,184 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(65, 65, 65);
+}
+
+.main_section {
+    width: 100%;
+    min-height: 100px;
+}
+
+.main_content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    border-radius: 8px;
+    width: 95%;
+    min-height: 100px;
+    margin: 10px;
+    margin-left: auto;
+    padding: 5px;
+}
+
+
+.div_produits {
+    border: 1px solid black;
+    background-color: rgb(45, 45, 45);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 8px;
+    width: 320px;
+    min-height: 100px;
+    max-height: 100%;
+    margin: 10px;
+    color: white;
+}
+
+.div_produits h2 {
+    text-align: center;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.div_img {
+    width: 98%;
+    padding: 10px;
+}
+
+.div_img img {
+    border-radius: 8px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.div_produits p {
+    padding: 5px;
+    width: 90%;
+    min-height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height: 150px;
+    text-align: center;
+}
+
+.div_produits p::-webkit-scrollbar {
+    display: none;
+}
+
+.div_info_product {
+    border-radius: 0px 0px 8px 8px;
+    background-color: rgb(30, 30, 30);
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* HEADER */
+a {
+    color: black;
+    text-decoration: none;
+
+}
+
+.header_div {
+    display: flex;
+    justify-content: flex-start;
+    background-color: rgb(30, 30, 30);
+    ;
+    padding: 1rem;
+    box-shadow: var(--box-shadow);
+}
+
+.btn_acceuil {
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15px;
+    font-size: 24px;
+
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.div_btn_header {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.btn_create_article {
+    width: fit-content;
+    height: fit-content;
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: white;
+    border: 2px solid rgb(65, 65, 65);
+    border-radius: 8px;
+    padding: 5px;
+}
+
+.div_inp {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.inp_email {
+    width: 100px;
+    padding: 0px 5px 0 3px;
+    width: fit-content;
+    margin-bottom: 5px;
+}
+
+.inp_password {
+    width: 100px;
+    padding: 0px 5px 0 3px;
+    width: fit-content;
+    margin-left: 5px;
+}
+
+.form_inscript {
+    display: flex;
+}
+
+.button_ajt {
+    background-color: #353535;
+    font-weight: 700;
+    padding: 5px;
+    border: 0;
+    border-radius: 8px;
+    color: white;
+    margin-top: auto;
+    font-size: 13px;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    margin-right: 15px;
+    cursor: pointer;
+    width: fit-content;
+    height: fit-content;
+}
+
+.label_inp {
+    color: white;
+}
+
+.div_center label {
+    color: white;
+    font-weight: 700;
+    text-align: left;
+    margin-left: 4px;
+}

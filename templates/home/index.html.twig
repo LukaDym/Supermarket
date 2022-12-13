@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	<section class="main_section">
+
+		<div class="main_content">
+			{% for produit in produits %}
+				<div class="div_produits">
+					<div class="div_img">
+						<img src="{{ asset('images/')}}{{produit.urlImage}}" alt="">
+					</div>
+					<h2>{{produit.title}}</h2>
+					<p>{{produit.description}}</p>
+
+					<div class="div_info_product">
+						<h4>
+							Prix:
+							{{produit.prix}}
+							€
+						</h4>
+						<h4>
+							Quantité:
+							{{produit.quantite}}
+						</h4>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+
+	</section>
+
+{% endblock %}
